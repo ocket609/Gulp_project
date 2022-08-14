@@ -1,7 +1,11 @@
 @charset "UTF-8";
 /*color*/
 /*font-size*/
+/*1rem=16px*/
+/*padding*/
+/*margin*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -61,24 +65,111 @@ mobile： 372px
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans TC", "Roboto",sans-serif; }
+
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle; }
+
+a {
+  text-decoration: none; }
 
 .container {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px; }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 372px;
+    padding: 0; } }
+
+/*font*/
+.fw-r {
+  font-weight: 400; }
+
+/*flex*/
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.justify-cc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.justify-csbt {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.align-ic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/*padding&margin*/
+.pl-64 {
+  padding-left: 64px; }
+
 /* header */
 .header {
-  background-color: #AA0601; }
+  background-color: #AA0601;
+  color: #ffff;
+  font-size: 20px; }
   .header img {
     max-width: 80px; }
+  .header a {
+    color: #ffff; }
+  .header li a {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px; }
+
+@media (max-width: 375px) {
+  .header-box {
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header img {
+    padding: 12px 0; }
+  .header ul {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px; }
+  .header li {
+    max-width: 50%;
+    border: 1px solid #ffff; }
+  .header li a {
+    display: block;
+    text-align: center;
+    padding: 12px 0; } }
 
 /* footer */
 .footer {
-  background-color: #AA0601; }
+  background-color: #AA0601;
+  color: #ffff; }
+  .footer a {
+    color: #ffff; }
 
 /*# sourceMappingURL=all.css.map */
