@@ -67,7 +67,8 @@ mobile： 372px
 
 body {
   line-height: 1.5;
-  font-family: "Noto Sans TC", "Roboto",sans-serif; }
+  font-family: "Noto Sans TC", "Roboto",sans-serif;
+  font-weight: 400; }
 
 img {
   max-width: 100%;
@@ -92,8 +93,17 @@ a {
     padding: 0; } }
 
 /*font*/
-.fw-r {
-  font-weight: 400; }
+.fz-36 {
+  font-size: 36px; }
+
+.fz-40 {
+  font-size: 40px; }
+
+.fz-16 {
+  font-size: 16px; }
+
+.fz-14 {
+  font-size: 14px; }
 
 /*flex*/
 .df {
@@ -119,6 +129,24 @@ a {
 /*padding&margin*/
 .pl-64 {
   padding-left: 64px; }
+
+.pl-48 {
+  padding-left: 48px; }
+
+.pl-32 {
+  padding-left: 32px; }
+
+.pr-20 {
+  padding-right: 20px; }
+
+.pr-22 {
+  padding-right: 22px; }
+
+.pb-8 {
+  padding-bottom: 8px; }
+
+.pb-32 {
+  padding-bottom: 32px; }
 
 /* header */
 .header {
@@ -171,5 +199,61 @@ a {
   color: #ffff; }
   .footer a {
     color: #ffff; }
+  .footer-box {
+    border-bottom: 1px solid #ffff; }
+  .footer .nav ul {
+    font-size: 16px;
+    margin: 0 -24px; }
+  .footer .nav a {
+    display: block;
+    padding: 60px 24px 35px; }
+  .footer .icon a {
+    font-size: 36px; }
+  .footer .r-side {
+    padding-top: 48px; }
+    .footer .r-side img {
+      max-width: 48px; }
+  .footer-box2 {
+    padding: 32px 0; }
+
+@media (max-width: 768px) {
+  .footer .nav a {
+    padding-bottom: 32px; }
+  .footer .r-side a {
+    padding-left: 16px; } }
+
+@media (max-width: 375px) {
+  .footer .nav {
+    display: none; }
+  .footer .icon {
+    font-size: 16px; }
+  .footer-box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0; }
+  .fz-36 {
+    font-size: 18px; }
+  .fz-40 {
+    font-size: 20px; }
+  .pr-22 {
+    padding-right: 11px; }
+  .pr-20 {
+    padding-right: 10px; } }
 
 /*# sourceMappingURL=all.css.map */
