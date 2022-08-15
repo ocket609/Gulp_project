@@ -121,10 +121,26 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.justify-cfe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .align-ic {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.align-ife {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.flex-dc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 /*padding&margin*/
 .pl-64 {
@@ -164,7 +180,6 @@ a {
 
 @media (max-width: 375px) {
   .header-box {
-    max-width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -175,7 +190,8 @@ a {
   .header img {
     padding: 12px 0; }
   .header ul {
-    max-width: 100%;
+    width: 100%;
+    /*要給width:100%而不是max-width:100%*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -186,7 +202,8 @@ a {
             justify-content: center;
     font-size: 16px; }
   .header li {
-    max-width: 50%;
+    width: 50%;
+    /*要給width:50%而不是max-width:50%*/
     border: 1px solid #ffff; }
   .header li a {
     display: block;
@@ -255,5 +272,52 @@ a {
     padding-right: 11px; }
   .pr-20 {
     padding-right: 10px; } }
+
+.title {
+  height: 787px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.main {
+  padding: 96px 0 80px; }
+  .main h1 {
+    font-size: 48px;
+    font-weight: 700;
+    border-left: 8px solid #AA0601;
+    padding-left: 16px; }
+  .main h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 32px;
+    padding-bottom: 24px; }
+  .main ul {
+    margin-bottom: -32px; }
+  .main li {
+    padding-bottom: 32px; }
+    .main li h4 {
+      font-size: 20px;
+      font-weight: 700;
+      padding-bottom: 8px; }
+    .main li p {
+      font-size: 16px;
+      font-weight: 400; }
+
+@media (max-width: 768px) {
+  .main {
+    padding: 80px 0; } }
+
+@media (max-width: 375px) {
+  .main {
+    padding: 40px 0 64px; }
+    .main h1 {
+      font-size: 24px; }
+    .main h3 {
+      padding-top: 24px; }
+    .main ul {
+      margin-bottom: -24px; }
+    .main li {
+      padding-bottom: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
