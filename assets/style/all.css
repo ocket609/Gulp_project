@@ -126,6 +126,10 @@ a {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+.justify-cspa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 .align-ic {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -289,12 +293,307 @@ a {
   .pb-sm-8 {
     padding-bottom: 8px; } }
 
+/*title*/
 .title {
   height: 787px;
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat; }
+  .title .box h3 {
+    color: #650300; }
+  .title .box h1 {
+    font-weight: 700;
+    color: #650300; }
+  .title .box a {
+    font-weight: 500;
+    color: #ffff;
+    background-color: #AA0601;
+    padding: 6px 12px; }
+
+.fz-64 {
+  font-size: 64px; }
+
+.fz-20 {
+  font-size: 20px; }
+
+/*padding&margin*/
+.pt-296 {
+  padding-top: 296px; }
+
+.pb-4 {
+  padding-bottom: 4px; }
+
+@media (max-width: 768px) {
+  .title {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png); } }
+
+@media (max-width: 375px) {
+  .title {
+    height: 396px; }
+  .fz-sm-16 {
+    font-size: 16px; }
+  .fz-sm-24 {
+    font-size: 24px; }
+  .pt-sm-144 {
+    padding-top: 144px; }
+  .pb-sm-8 {
+    padding-bottom: 8px; } }
+
+/*meun*/
+.meun {
+  color: #650300;
+  background-color: #FBF2F2;
+  padding: 80px 0; }
+  .meun h2 {
+    text-align: center;
+    font-weight: 700; }
+  .meun h4 {
+    font-size: 24px;
+    font-weight: 700; }
+  .meun ul {
+    /*margin: 0 -12px;*/
+    /*放margin:0 -12px;就會無法置中，偏一邊，為什麼??*/ }
+  .meun li {
+    text-align: center;
+    max-width: 306px;
+    padding: 24px 12px 0; }
+    .meun li img {
+      max-width: 100px; }
+    .meun li p {
+      text-align: left;
+      color: #000; }
+
+.flex-ww {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.fz-24 {
+  font-size: 24px; }
+
+.fz-48 {
+  font-size: 48px; }
+
+.pb-16 {
+  padding-bottom: 16px; }
+
+@media (max-width: 768px) {
+  .meun ul {
+    max-width: 100%; }
+  .meun li {
+    max-width: 50%; } }
+
+@media (max-width: 375px) {
+  .meun {
+    padding: 40px 0; }
+    .meun li {
+      max-width: 100%; }
+  .fz-sm-24 {
+    font-size: 24px; } }
+
+/*product*/
+.product {
+  padding: 80px 0; }
+  .product h2 {
+    text-align: center;
+    color: #650300;
+    font-weight: 700; }
+  .product .card-product {
+    max-width: 100%;
+    /*放margin:0 -12px;就會無法置中，偏一邊，為什麼??*/ }
+  .product .card-body-product {
+    max-width: 33.3333%;
+    padding-left: 12px;
+    padding-right: 12px;
+    /*如果放padding:0 12px;因為權重的關係，響應式的pt&pb會被0所限制，而顯示不出來*/ }
+    .product .card-body-product h3 {
+      text-align: center;
+      color: #AA0601;
+      font-weight: 700;
+      font-family: "Roboto",sans-serif;
+      font-style: italic; }
+
+.pt-48 {
+  padding-top: 48px; }
+
+@media (max-width: 768px) {
+  .product .card-body-product {
+    max-width: 100%; }
+  .pt-md-24 {
+    padding-top: 24px; } }
+
+@media (max-width: 375px) {
+  .product {
+    padding: 40px 0; }
+  .fz-sm-24 {
+    font-size: 24px; }
+  .pt-sm-24 {
+    padding-top: 24px; } }
+
+/*new*/
+.new {
+  height: auto;
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0; }
+  .new h2 {
+    text-align: center;
+    color: #ffff; }
+  .new .card-new {
+    max-width: 100%; }
+  .new .card-body-new {
+    max-width: 50%;
+    text-align: center;
+    color: #650300; }
+    .new .card-body-new .img-sm-new {
+      display: none; }
+    .new .card-body-new h3 {
+      color: #AA0601;
+      font-weight: 700;
+      font-family: "Roboto",sans-serif;
+      font-style: italic;
+      background-color: #ffff;
+      padding: 8px 0; }
+
+@media (max-width: 768px) {
+  .new .card-body-new {
+    max-width: 100%; }
+  .pt-md-24 {
+    padding-top: 24px; } }
+
+@media (max-width: 375px) {
+  .new {
+    padding: 40px 0; }
+    .new .card-body-new .img-pc-new {
+      display: none; }
+    .new .card-body-new .img-sm-new {
+      display: inline-block; }
+  .fz-sm-24 {
+    font-size: 24px; }
+  .pt-sm-24 {
+    padding-top: 24px; } }
+
+/*recommend*/
+.recommend {
+  padding: 80px 0; }
+  .recommend h2 {
+    color: #650300;
+    text-align: center;
+    font-weight: 700; }
+  .recommend .card-recommend {
+    max-width: 100%; }
+  .recommend .card-body-recommend {
+    max-width: 23%;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    margin-left: 12px;
+    margin-right: 12px; }
+    .recommend .card-body-recommend p {
+      padding-left: 16px; }
+
+.fw-500 {
+  font-weight: 500; }
+
+.color-p {
+  color: #707070; }
+
+.pb-48 {
+  padding-bottom: 48px; }
+
+.pb-72 {
+  padding-bottom: 72px; }
+
+.mt-48 {
+  margin-top: 48px; }
+
+@media (max-width: 768px) {
+  .recommend .card-body-recommend {
+    max-width: 46%; }
+  .mt-md-24 {
+    margin-top: 24px; }
+  .pb-md-72 {
+    padding-bottom: 72px; }
+  .pb-md-96 {
+    padding-bottom: 96px; } }
+
+@media (max-width: 375px) {
+  .recommend {
+    padding: 40px 0; }
+    .recommend .card-body-recommend {
+      max-width: 100%; }
+  .fz-sm-24 {
+    font-size: 24px; }
+  .mt-sm-24 {
+    margin-top: 24px; } }
+
+/*contact*/
+.contact {
+  padding: 80px 0; }
+  .contact .box-contact {
+    max-width: 636px; }
+    .contact .box-contact h2 {
+      text-align: center;
+      color: #650300;
+      font-weight: 700; }
+    .contact .box-contact label {
+      font-size: 16px; }
+    .contact .box-contact input {
+      font-size: 16px; }
+  .contact .form-contact {
+    width: 100%; }
+  .contact .box-contact-send {
+    width: 100%; }
+    .contact .box-contact-send a {
+      display: inline-block;
+      color: #ffff;
+      font-size: 16px;
+      font-weight: 700;
+      background: #AA0601;
+      padding: 16px 176px; }
+
+.pt-6 {
+  padding-top: 6px; }
+
+.pb-6 {
+  padding-bottom: 6px; }
+
+.pb-24 {
+  padding-bottom: 24px; }
+
+.pb-106 {
+  padding-bottom: 106px; }
+
+.pl-4 {
+  padding-left: 4px; }
+
+.mb-8 {
+  margin-bottom: 8px; }
+
+.mb-16 {
+  margin-bottom: 16px; }
+
+.mt-48 {
+  margin-bottom: 48px; }
+
+@media (max-width: 768px) {
+  .contact .box-contact-send a {
+    padding: 16px 136px; }
+  .fz-md-16 {
+    font-size: 16px; }
+  .pb-md-24 {
+    padding-bottom: 24px; } }
+
+@media (max-width: 375px) {
+  .contact {
+    padding: 40px 0; }
+    .contact .box-contact-send a {
+      padding: 16px 142px; }
+  .fz-sm-24 {
+    font-size: 24px; }
+  .mt-sm-24 {
+    margin-top: 24px; } }
 
 .main {
   padding: 96px 0 80px; }
