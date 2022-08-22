@@ -1,0 +1,53 @@
+.main{
+    padding: 96px 0 80px;
+    h1{
+        font-size: $f-sz-48;
+        font-weight: 700;
+        border-left: 8px solid $primary;
+        padding-left: 16px;
+    }
+    h3{
+        font-size: $f-sz-24;
+        font-weight: 700;
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+    ul{
+        margin-bottom: -32px;
+    }
+    li{
+        padding-bottom: 32px;
+        h4{
+            font-size: $f-sz-20;
+            font-weight: 700;
+            padding-bottom: 8px;
+        }
+        p{
+            font-size: $f-sz-16;
+            font-weight: 400;
+        }
+    }
+}
+
+@include pad{
+    .main{
+        padding: 80px 0;
+    }
+}
+@include mobile{
+    .main{
+        padding: 40px 0 64px;
+        h1{
+            font-size: $f-sz-24;
+        }
+        h3{
+            padding-top: 24px;
+        }
+        ul{
+            margin-bottom: -24px;
+        }
+        li{
+            padding-bottom: 24px;
+        }
+    }
+}

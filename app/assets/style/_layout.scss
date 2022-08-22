@@ -1,0 +1,234 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: "Noto Sans TC", "Roboto",sans-serif;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+@include pad{
+    .container{
+        max-width: 720px;
+    }
+}
+@include mobile{
+    .container{
+        max-width: 372px;
+        padding: 0; 
+    }
+}
+/*font*/
+.fz-36{
+    font-size: $f-sz-36;
+}
+.fz-40{
+    font-size: $f-sz-40;
+}
+.fz-16{
+    font-size: $f-sz-16;
+}
+.fz-14{
+    font-size: $f-sz-14;
+}
+/*flex*/
+.df{
+    display: flex;
+}
+.justify-cc{
+    justify-content: center;
+}
+.justify-csbt{
+    justify-content: space-between;
+}
+.justify-cfe{
+    justify-content: flex-end;
+}
+.justify-cspa{
+    justify-content: space-around;
+}
+.align-ic{
+    align-items: center;
+}
+.align-ife{
+    align-items: flex-end;
+}
+.flex-dc{
+    flex-direction: column;
+}
+/*padding&margin*/
+.pl-64{
+    padding-left: 64px;
+}
+.pl-48{
+    padding-left: 48px;
+}
+.pl-32{
+    padding-left: 32px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.pr-22{
+    padding-right: 22px;
+}
+.pb-8{
+    padding-bottom: 8px;
+}
+.pb-32{
+    padding-bottom: 32px;
+}
+
+
+/* header */
+.header{
+    background-color: $primary;
+    color: #ffff;
+    font-size: $f-sz-20;
+    img{
+        max-width: 80px;
+    }
+    a{
+        color: #ffff;
+    }
+    li a{
+        display: block;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+@include mobile{
+    .header{
+        &-box{
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            padding: 12px 0;
+        }
+        ul{
+            width: 100%; /*要給width:100%而不是max-width:100%*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: $f-sz-16;
+        }
+        li{ 
+            width: 50%; /*要給width:50%而不是max-width:50%*/
+            border: 1px solid #ffff;
+        }
+        li a{
+            display: block;
+            text-align: center;
+            padding: 12px 0;
+        }
+    }  
+}
+/* footer */
+.footer{
+    background-color: $primary;
+    color: #ffff;
+    a{
+        color: #ffff;
+    }
+    &-box{
+        border-bottom: 1px solid #ffff;
+    }
+    .nav ul{
+        font-size: $f-sz-16;
+        margin: 0 -24px;
+    }
+    .nav a{
+        display: block;
+        padding: 60px 24px 36px;
+    }
+    .icon a{
+        font-size: $f-sz-36;
+    }
+    .r-side{
+        padding-top: 48px;
+        img{
+            max-width: 48px;
+        }
+    }
+    &-box2{
+        padding: 32px 0;
+    }
+}
+@include pad{
+    .footer{
+        .nav a{
+            padding-top: 56px;
+            padding-bottom: 32px;
+        }
+        .r-side img{
+            max-width: 40px;
+        }
+        .pl-md-16{
+            padding-left: 16px;
+        }
+    }
+}
+@include mobile{
+    .footer{
+        .nav{
+            display: none;
+        }
+        .icon a{
+            font-size: $f-sz-16;
+        }
+        .r-side{
+            padding-top: 24px;
+        }
+        .r-side img{
+            max-width: 24px;
+        }
+        &-box2{
+            display: flex;
+            flex-direction: column;
+            padding: 16px 0 24px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+        }
+    }
+    .fz-18{
+        font-size: $f-sz-18;
+    }
+    .fz-20{
+        font-size: $f-sz-20;
+    }
+    .pr-sm-a{
+        padding-right: 11px;
+    }
+    .pr-sm-b{
+        padding-right: 10px;
+    }
+    .pl-sm-8{
+        padding-left: 8px;
+    }
+    .pt-sm-24{
+        padding-top: 24px;
+    }
+    .pl-sm-0{
+        padding-left: 0;
+    }
+    .pb-sm-8{
+        padding-bottom: 8px;
+    }
+}
